@@ -1,0 +1,14 @@
+models:
+  - stg_customers
+  - stg_products
+  - stg_orders
+  - stg_order_items
+  - stg_events
+  - int_order_items_enriched
+  - int_customer_cohorts
+  - rfm_segments
+  - cohort_retention
+  - conversion_funnel
+  - abc_analysis
+  - sales_dynamics
+  - customer_ltv_features
