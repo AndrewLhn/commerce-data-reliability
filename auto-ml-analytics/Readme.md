@@ -72,3 +72,46 @@ Project Structure
 │   └── ml_models.yaml       # target variables, feature sets
 ├── monitoring/              # Prometheus/Grafana/Alertmanager configs
 └── reports/                 # auto‑generated daily HTML/PDF reports
+
+
+1. Complex SQL Logic
+RFM segmentation with dynamic quintiles via dbt macros
+
+Cohort retention with window functions and cumulative calculations
+
+Recursive category trees for product hierarchies
+
+Conversion funnels using sequence analysis
+
+ABC product classification using PERCENT_RANK
+
+Time‑series features for ML (moving averages, lags)
+
+2. Machine Learning Integration
+Daily LTV predictions for new customers
+
+Churn probability (Logistic Regression) – refreshed weekly
+
+Demand forecasting (ARIMA‑like features) – training on historical sales
+
+Model performance logging (MAE, RMSE, confusion matrix) and automatic alerting on degradation
+
+All models stored as pickle files and versioned
+
+3. Automation & Observability
+Dynamic DAG generation – tasks are created from YAML config, no need to edit Python code.
+
+Anomaly detection on key metrics (revenue, conversion, LTV) using z‑score thresholds.
+
+Telegram alerts for model failures, data quality issues, and metric anomalies.
+
+Prometheus exporters for Airflow task durations, PostgreSQL performance, and custom ML metrics.
+
+Grafana dashboards ready for monitoring pipeline health and business KPIs.
+
+4. Data Quality & Testing
+dbt tests (generic + custom) ensure uniqueness, not‑null, and business rules.
+
+Great Expectations (optional) can be added for advanced validation.
+
+Automated profiling of critical tables (using ydata‑profiling) – reports saved to reports/.
