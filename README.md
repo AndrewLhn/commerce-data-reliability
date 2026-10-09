@@ -3,7 +3,7 @@
 Local reference platform for monitoring the reliability of a daily e-commerce order pipeline.
 
 ~~~text
-synthetic orders -> Airflow -> PostgreSQL raw -> dbt -> reconciliation and SLO marts -> Grafana
+synthetic orders -> Airflow -> PostgreSQL raw -> dbt -> reconciliation and SLO marts
 ~~~
 
 The platform records ingestion runs, compares source and warehouse totals, evaluates freshness and
@@ -15,7 +15,6 @@ data-quality rules, and stores failures as operational incidents.
 - Run audit: received, loaded, rejected, and completion status.
 - dbt models for orders, daily reconciliation, and reliability SLOs.
 - Incident records for failed reconciliation or freshness checks.
-- Versioned alert rules and dashboard queries.
 
 ## Local run
 
