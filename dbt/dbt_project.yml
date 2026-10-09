@@ -1,0 +1,12 @@
+name: commerce_reliability
+version: "1.0.0"
+config-version: 2
+profile: commerce_reliability
+model-paths: ["models"]
+test-paths: ["tests"]
+clean-targets: ["target", "dbt_packages", "logs"]
+models:
+  commerce_reliability:
+    staging: {+materialized: view}
+    core: {+materialized: table}
+    operations: {+materialized: table}
